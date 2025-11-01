@@ -5,5 +5,6 @@ print("Nice test")
 def printHello():
     print("Hello world from the function")
 
-
+def getAllUsera():
+    print("=====================");
 printHello();
