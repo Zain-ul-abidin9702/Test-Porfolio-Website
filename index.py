@@ -1,6 +1,3 @@
-print("This is my portfolio website")
-print("Nice test")
-
 
 users = []
 
@@ -13,11 +10,21 @@ def getAllUsers():
 def createUser(user):
     users.append(user)
 
-print("Creating User");
+def getUser(name):
+    for user in users:
+        
+        if user["name"]== name:
+            return user
+        
+    return None
+
+
 createUser({"name":"zain","age":22})
-
 printUsers();
-print("Get All Users : ",getAllUsers());
 
-print("Creating User");
+
 createUser({"name":"ehsan","age":45})
+printUsers()
+
+user = getUser("ahmed")
+print("User : ",user);
